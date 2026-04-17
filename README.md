@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 가나공조닥트 (GANA HVAC DUCT) 공식 웹사이트
 
-## Getting Started
+49년 현장 경력 / 30년 업력의 공조닥트 제작·시공 전문기업 **가나공조닥트**의 공식 홈페이지입니다.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16** (App Router, Static Export)
+- **TypeScript**
+- **Tailwind CSS v4**
+- **Framer Motion** (스크롤 애니메이션)
+
+## 로컬 실행
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3001
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 빌드
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build      # 정적 HTML 생성 (out/)
+npm run start      # 프로덕션 미리보기
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 배포 (Vercel 권장)
 
-## Learn More
+```bash
+npx vercel --prod
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 프로젝트 구조
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+src/
+├── app/            # 레이아웃, 페이지, 글로벌 CSS
+├── components/
+│   ├── layout/     # Navbar, Footer
+│   ├── sections/   # Hero, Intro, Legacy, Services, Process, Projects, Capabilities, Partners, Contact
+│   └── ui/         # Button, CountUp, Logo, SectionHeader
+├── lib/            # 애니메이션 variants, 유틸리티
+public/images/      # 실사진 9장 + 서비스 이미지 6장
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 연락처
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **대표:** 이오복
+- **Tel:** 031-353-2547
+- **Mobile:** 010-8817-8523
+- **Email:** gana72407@naver.com
+- **주소:** 경기도 화성시 팔탄면 3.1만세로 677
