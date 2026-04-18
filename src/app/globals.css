@@ -44,6 +44,8 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -52,6 +54,14 @@ body {
   background: #ffffff;
   line-height: 1.7;
   overflow-x: hidden;
+  max-width: 100vw;
+  position: relative;
+}
+
+/* 메인 컨테이너 가로 오버플로우 차단 */
+main, nav, footer, section {
+  max-width: 100vw;
+  overflow-x: clip;
 }
 
 ::selection {
