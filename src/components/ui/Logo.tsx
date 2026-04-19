@@ -49,16 +49,16 @@ export function LogoFull({ className = "", color = "#0A1F3D" }: { className?: st
       <Logo color={color} size={36} />
       <div className="flex flex-col">
         <span
-          className="text-[0.9375rem] font-bold tracking-tight leading-tight"
+          className="text-[1.0625rem] font-bold tracking-tight leading-tight"
           style={{ color }}
         >
-          GANA
+          가나공조닥트
         </span>
         <span
-          className="text-[0.5625rem] tracking-[0.2em] leading-tight font-medium"
+          className="text-[0.5625rem] tracking-[0.18em] leading-tight font-medium mt-0.5"
           style={{ color: color === "#0A1F3D" ? "#6B7079" : "rgba(255,255,255,0.6)" }}
         >
-          HVAC DUCT
+          GANA HVAC DUCT
         </span>
       </div>
     </div>
