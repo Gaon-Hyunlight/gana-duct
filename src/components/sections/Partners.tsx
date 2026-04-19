@@ -84,14 +84,24 @@ export default function Partners() {
                 className="absolute inset-0"
               />
             </div>
-            <a
-              href="https://map.kakao.com/link/search/경기도 화성시 팔탄면 3.1만세로 677"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-flex items-center gap-2 text-xs text-[var(--color-neutral-500)] hover:text-[var(--color-primary-700)] transition-colors"
-            >
-              카카오맵에서 길찾기 <span>&rarr;</span>
-            </a>
+            <div className="mt-3 flex flex-col gap-1.5">
+              <a
+                href="https://map.kakao.com/link/search/경기도 화성시 팔탄면 3.1만세로 677"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-xs text-[var(--color-neutral-500)] hover:text-[var(--color-primary-700)] transition-colors"
+              >
+                카카오맵에서 길찾기 <span>&rarr;</span>
+              </a>
+              <a
+                href="https://map.naver.com/p/search/경기도 화성시 팔탄면 3.1만세로 677"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-xs text-[var(--color-neutral-500)] hover:text-[var(--color-primary-700)] transition-colors"
+              >
+                네이버지도에서 길찾기 <span>&rarr;</span>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>
