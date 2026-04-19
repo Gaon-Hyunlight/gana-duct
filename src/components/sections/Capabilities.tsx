@@ -5,10 +5,10 @@ import { fadeUp, staggerContainer } from "@/lib/animations";
 import CountUp from "@/components/ui/CountUp";
 
 const capabilities = [
-  { value: 49, suffix: "+", label: "YEARS", desc: "현장 경력" },
-  { value: 30, suffix: "+", label: "YEARS", desc: "업력" },
-  { value: 9, suffix: "", label: "CORE", desc: "사업영역" },
-  { value: 1000, suffix: "+", label: "SITES", desc: "누적 시공 추정" },
+  { value: 49, suffix: "+", label: "YEARS", desc: "대표 경력" },
+  { value: 30, suffix: "+", label: "YEARS", desc: "법인 업력" },
+  { value: 9, suffix: "", label: "FIELDS", desc: "사업영역" },
+  { value: 1, suffix: "", label: "OWN FACTORY", desc: "화성 자체 공장" },
 ];
 
 export default function Capabilities() {
@@ -56,7 +56,7 @@ export default function Capabilities() {
           viewport={{ once: true }}
           className="mt-10 text-center text-[0.6875rem] text-[var(--color-neutral-600)]"
         >
-          *2026년 현재 대표 개인 경력 및 업체 운영 기간 기준
+          *대표 개인 경력(현장 외길) 및 1994년 법인 설립 기준
         </motion.p>
       </div>
     </section>

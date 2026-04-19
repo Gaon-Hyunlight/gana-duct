@@ -75,7 +75,7 @@ export default function Contact() {
               문의 / CONTACT
             </motion.p>
             <motion.h2 variants={fadeUp} className="text-h2 text-[var(--color-neutral-900)] mb-10">
-              30년의 노하우를
+              49년의 손끝을
               <br />
               의뢰하세요
             </motion.h2>

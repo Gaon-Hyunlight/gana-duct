@@ -43,8 +43,8 @@ const projects = [
   },
   {
     image: "/images/fan-catalog.jpg",
-    title: "루프 벤틸레이터 · 에어포일 팬",
-    location: "제품 라인업",
+    title: "취급 제품 · ROOF VENTILATOR / AIRFOIL FAN",
+    location: "제품 카탈로그",
     size: "small",
   },
   {

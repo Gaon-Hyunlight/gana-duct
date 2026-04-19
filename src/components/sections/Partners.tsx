@@ -19,7 +19,7 @@ export default function Partners() {
         <SectionHeader
           number="시공범위"
           label="COVERAGE"
-          title="전국 어디든, 공기가 필요한 곳"
+          title="수도권·충청, 공기가 필요한 어디든"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">

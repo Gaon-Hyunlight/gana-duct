@@ -5,12 +5,12 @@ import { fadeUp, staggerContainer } from "@/lib/animations";
 import SectionHeader from "@/components/ui/SectionHeader";
 
 const steps = [
-  { num: "01", title: "현장조사", en: "Survey", desc: "현장 방문 후 공간·환경·요구사항을 정밀 파악합니다." },
-  { num: "02", title: "설계·도면", en: "Design", desc: "49년 노하우를 바탕으로 최적의 닥트 경로를 설계합니다." },
-  { num: "03", title: "자재수급", en: "Procurement", desc: "용도에 맞는 자재를 엄선하여 수급합니다." },
-  { num: "04", title: "공장제작", en: "Fabrication", desc: "화성 자체 공장에서 정밀 절단·성형·용접합니다." },
-  { num: "05", title: "현장시공", en: "Installation", desc: "숙련 기술진이 현장에서 직접 설치합니다." },
-  { num: "06", title: "시운전·A/S", en: "After-Service", desc: "가동 테스트 후 유지보수까지 책임집니다." },
+  { num: "01", title: "현장조사", desc: "대표가 직접 현장을 보고 공간·환경·요구사항을 파악합니다." },
+  { num: "02", title: "설계·도면", desc: "49년 노하우로 닥트 경로와 풍량을 설계합니다." },
+  { num: "03", title: "자재수급", desc: "용도에 맞는 자재를 엄선하여 수급합니다." },
+  { num: "04", title: "공장제작", desc: "화성 자체 공장에서 정밀 절단·성형·용접합니다." },
+  { num: "05", title: "현장시공", desc: "숙련 기술진이 현장에서 직접 설치합니다." },
+  { num: "06", title: "시운전·A/S", desc: "가동 테스트 후 유지보수까지 책임집니다." },
 ];
 
 export default function Process() {
@@ -49,12 +49,9 @@ export default function Process() {
 
               {/* Text */}
               <div>
-                <h3 className="text-base font-semibold text-[var(--color-neutral-900)]">
+                <h3 className="text-base font-semibold text-[var(--color-neutral-900)] mb-2">
                   {step.title}
                 </h3>
-                <p className="text-label text-[var(--color-neutral-400)] text-[0.625rem] mt-0.5 mb-2">
-                  {step.en}
-                </p>
                 <p className="text-sm text-[var(--color-neutral-600)] leading-relaxed">
                   {step.desc}
                 </p>

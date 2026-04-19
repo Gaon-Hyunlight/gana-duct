@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <LogoFull color="#ffffff" />
             <p className="mt-4 text-sm leading-relaxed text-[var(--color-neutral-500)]">
-              공기의 길을 설계하는 30년 장인기업
+              공기의 길을 설계하는 49년 장인의 손
             </p>
           </div>
 
@@ -49,9 +49,6 @@ export default function Footer() {
                 주소: 경기도 화성시 팔탄면
                 <br />
                 3.1만세로 677
-              </li>
-              <li className="text-[var(--color-neutral-600)]">
-                사업자등록번호: {/* 클라이언트 확인 후 기입 */}—
               </li>
             </ul>
           </div>
@@ -86,7 +83,7 @@ export default function Footer() {
             &copy; 2026 GANA HVAC DUCT. All Rights Reserved.
           </p>
           <p className="text-xs text-[var(--color-neutral-700)]">
-            Designed with craftsmanship, built on 49 years of expertise.
+            화성에서 1994년부터, 가나공조닥트.
           </p>
         </div>
       </div>
