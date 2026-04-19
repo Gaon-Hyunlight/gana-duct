@@ -8,7 +8,6 @@ import Legacy from "@/components/sections/Legacy";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
 import Projects from "@/components/sections/Projects";
-import Capabilities from "@/components/sections/Capabilities";
 import Partners from "@/components/sections/Partners";
 import Contact from "@/components/sections/Contact";
 
@@ -23,7 +22,6 @@ export default function Home() {
         <Services />
         <Process />
         <Projects />
-        <Capabilities />
         <Partners />
         <Contact />
       </main>
