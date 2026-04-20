@@ -27,7 +27,7 @@ export default function Hero() {
           variants={fadeUp}
           className="text-label text-white/50 mb-5 md:mb-6"
         >
-1994 &middot; 경기도 화성
+1997 &middot; 경기도 화성
         </motion.p>
 
         {/* Title */}

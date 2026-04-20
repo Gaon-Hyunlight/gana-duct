@@ -6,7 +6,7 @@ import CountUp from "@/components/ui/CountUp";
 
 const stats = [
   { value: 49, suffix: "+", label: "대표 경력", sub: "(현장 외길)" },
-  { value: 30, suffix: "+", label: "업력", sub: "(법인 운영)" },
+  { value: 29, suffix: "+", label: "업력", sub: "(1997 설립)" },
   { value: 9, suffix: "", label: "사업영역", sub: "(냉난방~특수)" },
 ];
 

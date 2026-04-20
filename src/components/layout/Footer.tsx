@@ -45,10 +45,12 @@ export default function Footer() {
             <h4 className="text-sm font-semibold text-white mb-4">회사 정보</h4>
             <ul className="space-y-2.5 text-sm">
               <li>대표: 이오복</li>
+              <li>사업자등록번호: 124-18-72407</li>
+              <li>개인사업자 (계속사업자)</li>
               <li className="leading-snug">
-                주소: 경기도 화성시 팔탄면
+                본점·자체공장
                 <br />
-                3.1만세로 677
+                경기도 화성시 팔탄면 3.1만세로 677
               </li>
             </ul>
           </div>
@@ -83,7 +85,7 @@ export default function Footer() {
             &copy; 2026 GANA HVAC DUCT. All Rights Reserved.
           </p>
           <p className="text-xs text-[var(--color-neutral-700)]">
-            화성에서 1994년부터, 가나공조닥트.
+            화성에서 1997년부터, 가나공조닥트.
           </p>
         </div>
       </div>

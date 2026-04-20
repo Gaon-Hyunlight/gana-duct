@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "가나공조닥트 | 49년 장인의 공조닥트 제작·시공 전문기업",
   description:
-    "1994년 창립. 경기 화성 기반 공조닥트·환기시설 전문업체. 냉난방, 배기, 공장후드, 벤치레이타, 브로워까지 — 49년 외길 장인정신이 설계하는 산업의 공기.",
+    "1997년 창립. 경기 화성 기반 공조닥트·환기시설 전문업체. 냉난방, 배기, 공장후드, 벤치레이타, 브로워까지 — 49년 외길 장인정신이 설계하는 산업의 공기.",
   keywords: [
     "공조닥트",
     "환기시설",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "가나공조닥트 — GANA HVAC DUCT",
-    description: "공기의 길을 설계하는 30년 장인의 손끝",
+    description: "공기의 길을 설계하는 49년 장인의 손끝",
     locale: "ko_KR",
     type: "website",
   },
