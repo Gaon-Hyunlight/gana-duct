@@ -171,7 +171,7 @@ export default function Contact() {
               <p className="text-sm text-[var(--color-neutral-600)] leading-relaxed">
                 평일 08:00 – 18:00 / 토요일 08:00 – 13:00
                 <br />
-                공휴일 휴무 (긴급 A/S는 상시 대응)
+                공휴일 휴무
               </p>
             </motion.div>
           </motion.div>

@@ -33,7 +33,7 @@ export default function Intro() {
           >
             <span className="block">공기 한 줄기가 공장 전체의 효율을 바꿉니다.</span>
             <span className="block text-[var(--color-neutral-500)] mt-2">
-              가나공조닥트는 49년간 그 한 줄기를 손으로 만들어 왔습니다.
+              이오복 대표는 49년간 그 한 줄기를 손으로 만들어 왔습니다.
             </span>
           </motion.h2>
         </motion.div>

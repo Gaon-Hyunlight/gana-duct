@@ -45,7 +45,7 @@ export default function Hero() {
           variants={fadeUp}
           className="mt-5 md:mt-6 text-lg md:text-xl text-white/70 max-w-xl font-light"
         >
-          49년 외길의 장인정신, 가나공조닥트가 만드는 산업의 숨결
+          49년 외길의 장인이 빚는 산업의 숨결
         </motion.p>
 
         {/* CTA */}
