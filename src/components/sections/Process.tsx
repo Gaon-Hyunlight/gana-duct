@@ -6,7 +6,7 @@ import SectionHeader from "@/components/ui/SectionHeader";
 
 const steps = [
   { num: "01", title: "현장조사", desc: "대표가 직접 현장을 보고 공간·환경·요구사항을 파악합니다." },
-  { num: "02", title: "설계·도면", desc: "이오복 대표가 직접 닥트 경로·풍량을 설계합니다." },
+  { num: "02", title: "설계·도면", desc: "49년 노하우로 닥트 경로와 풍량을 설계합니다." },
   { num: "03", title: "자재수급", desc: "용도에 맞는 자재를 엄선하여 수급합니다." },
   { num: "04", title: "공장제작", desc: "화성 자체 공장에서 정밀 절단·성형·용접합니다." },
   { num: "05", title: "현장시공", desc: "숙련 기술진이 현장에서 직접 설치합니다." },

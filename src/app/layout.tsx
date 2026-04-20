@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "가나공조닥트 | 공조닥트 제작·시공 — 49년 장인의 손 (1997 화성)",
+  title: "가나공조닥트 | 49년 장인의 공조닥트 제작·시공 전문기업",
   description:
     "1997년 창립. 경기 화성 기반 공조닥트·환기시설 전문업체. 냉난방, 배기, 공장후드, 벤치레이타, 브로워까지 — 49년 외길 장인정신이 설계하는 산업의 공기.",
   keywords: [
