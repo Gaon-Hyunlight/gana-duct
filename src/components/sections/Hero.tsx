@@ -61,7 +61,7 @@ export default function Hero() {
             href="#contact"
             className="px-7 py-3.5 text-[0.9375rem] font-semibold text-white border border-white/30 hover:bg-white/10 rounded-sm transition-all duration-300"
           >
-            문의하기
+            무료 견적
           </a>
         </motion.div>
       </motion.div>

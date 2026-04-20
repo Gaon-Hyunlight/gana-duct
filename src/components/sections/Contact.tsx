@@ -74,11 +74,33 @@ export default function Contact() {
             <motion.p variants={fadeUp} className="text-label text-[var(--color-neutral-500)] mb-4">
               문의 / CONTACT
             </motion.p>
-            <motion.h2 variants={fadeUp} className="text-h2 text-[var(--color-neutral-900)] mb-10">
+            <motion.h2 variants={fadeUp} className="text-h2 text-[var(--color-neutral-900)] mb-6">
               49년의 손끝을
               <br />
               의뢰하세요
             </motion.h2>
+
+            {/* Differentiator badges */}
+            <motion.div variants={fadeUp} className="mb-10 flex flex-wrap gap-2">
+              <span className="inline-flex items-center gap-1.5 px-3 py-2 bg-[var(--color-primary-700)] text-white text-sm font-semibold rounded-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                무료 견적
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-2 bg-[var(--color-primary-700)] text-white text-sm font-semibold rounded-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                시공 보증 1년
+              </span>
+              <span className="inline-flex items-center gap-1.5 px-3 py-2 bg-[var(--color-primary-700)] text-white text-sm font-semibold rounded-sm">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                A/S 무상
+              </span>
+            </motion.div>
 
             <motion.div variants={fadeUp} className="space-y-6">
               {/* Address */}
@@ -165,13 +187,11 @@ export default function Contact() {
               </div>
             </motion.div>
 
-            {/* 운영시간 — 업계 일반 기준, 클라이언트 확인 필요 */}
+            {/* 운영시간 */}
             <motion.div variants={fadeUp} className="mt-8 p-4 bg-[var(--color-neutral-50)] rounded-sm">
               <p className="text-sm font-semibold text-[var(--color-neutral-900)] mb-2">운영시간</p>
               <p className="text-sm text-[var(--color-neutral-600)] leading-relaxed">
-                평일 08:00 – 18:00 / 토요일 08:00 – 13:00
-                <br />
-                공휴일 휴무
+                07:00 – 18:00
               </p>
             </motion.div>
           </motion.div>
