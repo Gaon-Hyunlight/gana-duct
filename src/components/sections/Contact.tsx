@@ -321,7 +321,16 @@ export default function Contact() {
                       className="mt-0.5 w-4 h-4 rounded border-[var(--color-neutral-300)] text-[var(--color-primary-700)] focus:ring-[var(--color-primary-700)]"
                     />
                     <span className="text-sm text-[var(--color-neutral-600)]">
-                      개인정보 수집 및 이용에 동의합니다. (문의 응대 목적으로만 사용됩니다.)
+                      <a
+                        href="/privacy"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="underline underline-offset-2 text-[var(--color-primary-700)] hover:text-[var(--color-primary-900)]"
+                      >
+                        개인정보처리방침
+                      </a>
+                      에 따른 수집·이용에 동의합니다.
                     </span>
                   </label>
                   {errors.privacy && <p className="text-red-500 text-xs mt-1">{errors.privacy}</p>}

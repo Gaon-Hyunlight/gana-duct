@@ -81,9 +81,17 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="border-t border-[var(--color-neutral-800)] mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-[var(--color-neutral-600)]">
-            &copy; 2026 GANA HVAC DUCT. All Rights Reserved.
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
+            <p className="text-xs text-[var(--color-neutral-600)]">
+              &copy; 2026 GANA HVAC DUCT. All Rights Reserved.
+            </p>
+            <a
+              href="/privacy"
+              className="text-xs text-[var(--color-neutral-500)] hover:text-white transition-colors"
+            >
+              개인정보처리방침
+            </a>
+          </div>
           <p className="text-xs text-[var(--color-neutral-700)]">
             화성에서 1997년부터, 가나공조닥트.
           </p>
