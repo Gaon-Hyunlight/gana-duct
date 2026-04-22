@@ -7,6 +7,7 @@ import { LogoFull } from "@/components/ui/Logo";
 const navItems = [
   { label: "소개", href: "#intro" },
   { label: "장인정신", href: "#legacy" },
+  { label: "경력", href: "#career" },
   { label: "사업영역", href: "#services" },
   { label: "시공과정", href: "#process" },
   { label: "시공사례", href: "#projects" },
