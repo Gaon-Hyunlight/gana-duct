@@ -66,7 +66,7 @@ export default function Career() {
         className="absolute inset-0 bg-cover bg-center pointer-events-none"
         style={{
           backgroundImage: "url('/images/career-mexico.png')",
-          opacity: 0.3,
+          opacity: 0.4,
         }}
       />
       {/* White overlay for text legibility */}
