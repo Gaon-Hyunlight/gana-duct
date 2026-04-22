@@ -57,10 +57,25 @@ export default function Career() {
   return (
     <section
       id="career"
-      className="bg-white"
+      className="relative bg-white overflow-hidden"
       style={{ paddingTop: "var(--section-gap)", paddingBottom: "var(--section-gap)" }}
     >
-      <div className="container-main">
+      {/* Background — 멕시코 현장 사진 */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-cover bg-center pointer-events-none"
+        style={{
+          backgroundImage: "url('/images/career-mexico.png')",
+          opacity: 0.3,
+        }}
+      />
+      {/* White overlay for text legibility */}
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/70 pointer-events-none"
+      />
+
+      <div className="container-main relative">
         <SectionHeader
           number="대표 경력"
           label="CAREER"
