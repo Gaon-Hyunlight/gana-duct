@@ -78,12 +78,12 @@ export default function Legacy() {
               variants={slideInRight}
               className="mt-12 pl-6 border-l-[3px] border-[var(--color-signal)]"
             >
-              <p className="text-lg text-[var(--color-neutral-800)] italic leading-relaxed">
+              <p className="text-lg text-[var(--color-neutral-800)] leading-relaxed">
                 &ldquo;공기는 거짓말을 하지 않는다.
                 <br />
                 내가 잘못 접으면 반드시 소음으로 돌아온다.&rdquo;
               </p>
-              <cite className="block mt-3 not-italic text-sm text-[var(--color-neutral-500)]">
+              <cite className="block mt-3 not-italic text-sm text-[var(--color-neutral-500)] font-normal">
                 &mdash; 이오복 대표
               </cite>
             </motion.blockquote>
