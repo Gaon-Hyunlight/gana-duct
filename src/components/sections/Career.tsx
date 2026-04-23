@@ -143,8 +143,8 @@ const careerItems: CareerItem[] = [
     countryEn: "MEXICO",
     accent: "모토로라 공장",
     projects: ["급·배기 닥트 공사"],
-    image: "/images/career-mexico.png",
-    imageNote: "현장 실사진 (대표 본인 소장)",
+    image: "/images/career-mexico-card.jpg",
+    imageNote: "산업 제조 라인 · 관련 분야 이미지",
     sources: [
       {
         label: "KOTRA — 2024년 멕시코 자동차 및 자동차부품 산업 정보",
@@ -278,8 +278,8 @@ export default function Career() {
         >
           ※ 본 이력은 이오복 대표의 진술과, 해당 시기 한국 대기업의 해외 진출 사실을 다룬 국내 주요
           언론 보도를 교차 확인하여 작성되었습니다. 현장별 참여 기간 및 세부 역할은 대표 진술 기준입니다.
-          사진은 멕시코를 제외하고 모두 해당 분야 관련 참고 이미지(Pexels)이며 실제 시공 현장 사진이
-          아닙니다.
+          카드 내 사진은 모두 해당 분야 관련 참고 이미지(Pexels)이며 실제 시공 현장 사진이 아닙니다.
+          섹션 배경 이미지는 대표 본인 소장의 멕시코 현장 실사진입니다.
         </motion.p>
       </div>
     </section>
