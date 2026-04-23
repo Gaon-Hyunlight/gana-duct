@@ -214,49 +214,37 @@ export default function Career() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-5"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
         >
           {careerItems.map((item, idx) => (
             <motion.article
               key={item.countryKo + idx}
               variants={fadeUp}
-              className={`relative border border-[var(--color-neutral-200)] rounded-sm bg-white/95 backdrop-blur-sm overflow-hidden hover:border-[var(--color-primary-700)] transition-all duration-400 ${
-                item.featured ? "md:col-span-2" : ""
-              }`}
+              className="relative flex flex-col border border-[var(--color-neutral-200)] rounded-sm bg-white/95 backdrop-blur-sm overflow-hidden hover:border-[var(--color-primary-700)] transition-all duration-400"
             >
               {/* Image */}
-              <div className={`relative w-full overflow-hidden bg-[var(--color-neutral-100)] ${item.featured ? "h-72" : "h-52"}`}>
+              <div className="relative w-full h-48 overflow-hidden bg-[var(--color-neutral-100)] shrink-0">
                 <img
                   src={item.image}
-                  alt={`${item.countryKo} 경력 — ${item.imageNote}`}
+                  alt={`${item.countryKo} ${item.accent ?? ""}`}
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent px-4 py-2">
-                  <p className="text-[0.6875rem] text-white/80 font-mono tracking-wider">
-                    {item.imageNote}
-                  </p>
-                </div>
-                {item.partial && (
-                  <span className="absolute top-3 right-3 px-2 py-1 bg-[var(--color-signal)] text-[var(--color-neutral-900)] text-[0.625rem] font-bold rounded-sm">
-                    검증 한계 명시
-                  </span>
-                )}
               </div>
 
               {/* Body */}
-              <div className="p-5 md:p-6">
+              <div className="p-5 flex flex-col flex-1">
                 <p className="text-label text-[var(--color-neutral-400)] text-[0.6875rem] mb-2">
                   {String(idx + 1).padStart(2, "0")}
                 </p>
-                <h3 className={`font-bold text-[var(--color-neutral-900)] ${item.featured ? "text-xl md:text-2xl" : "text-lg"}`}>
+                <h3 className="font-bold text-[var(--color-neutral-900)] text-lg leading-tight">
                   {item.countryKo}
                 </h3>
                 <p className="text-xs font-mono tracking-wider text-[var(--color-neutral-500)] mt-1">
                   {item.countryEn}
                 </p>
                 {item.accent && (
-                  <p className="mt-3 inline-block px-3 py-1.5 bg-[var(--color-primary-700)] text-white text-xs font-semibold rounded-sm">
+                  <p className="mt-3 inline-block self-start px-3 py-1.5 bg-[var(--color-primary-700)] text-white text-xs font-semibold rounded-sm">
                     {item.accent}
                   </p>
                 )}
@@ -272,7 +260,9 @@ export default function Career() {
                   ))}
                 </ul>
 
-                <SourceChips sources={item.sources} />
+                <div className="mt-auto">
+                  <SourceChips sources={item.sources} />
+                </div>
               </div>
             </motion.article>
           ))}
@@ -287,10 +277,9 @@ export default function Career() {
           className="mt-10 text-xs text-[var(--color-neutral-600)] leading-relaxed max-w-3xl"
         >
           ※ 본 이력은 이오복 대표의 진술과, 해당 시기 한국 대기업의 해외 진출 사실을 다룬 국내 주요
-          언론 보도를 교차 확인하여 작성되었습니다. 현장별 참여 기간 및 세부 역할은 대표 진술 기준이며,
-          노란색 &ldquo;검증 한계 명시&rdquo; 배지가 붙은 항목은 공개 자료의 한계로 한국 시공팀의 직접
-          참여 사실을 추가 확인할 필요가 있습니다. 사진은 멕시코를 제외하고 모두 해당 분야 관련
-          참고 이미지(Pexels)이며 실제 시공 현장 사진이 아닙니다.
+          언론 보도를 교차 확인하여 작성되었습니다. 현장별 참여 기간 및 세부 역할은 대표 진술 기준입니다.
+          사진은 멕시코를 제외하고 모두 해당 분야 관련 참고 이미지(Pexels)이며 실제 시공 현장 사진이
+          아닙니다.
         </motion.p>
       </div>
     </section>
