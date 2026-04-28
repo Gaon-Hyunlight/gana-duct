@@ -48,7 +48,7 @@ export default function Footer() {
               <li>사업자등록번호: 124-18-72407</li>
               <li>개인사업자 (계속사업자)</li>
               <li className="leading-snug">
-                본점·자체공장
+                사업장·자체공장
                 <br />
                 경기도 화성시 팔탄면 3.1만세로 677
               </li>

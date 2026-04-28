@@ -62,7 +62,7 @@ export const KEYWORDS_PRIMARY = [
   "1997 가나공조닥트",
   "가나공조닥트 화성",
   "가나공조닥트 팔탄",
-  "가나공조닥트 화성본점",
+  "가나공조닥트 화성 자체공장",
   "GANA HVAC DUCT",
   // 코어 (Trends 검증)
   "공조닥트",
