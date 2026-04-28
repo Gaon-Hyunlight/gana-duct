@@ -94,18 +94,27 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        {/* Pretendard CDN */}
+        {/* LCP 이미지 우선 로드 — Hero 배경 (CSS background-image라 발견 지연 회피) */}
         <link
-          rel="stylesheet"
-          as="style"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+          rel="preload"
+          as="image"
+          href="/images/hero-roof.webp"
+          fetchPriority="high"
+          type="image/webp"
         />
-        {/* Google Fonts */}
+        {/* 외부 폰트 호스트 preconnect */}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
+        />
+        {/* Pretendard CDN */}
+        <link
+          rel="stylesheet"
+          as="style"
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
