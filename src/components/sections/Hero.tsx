@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <div
           className="absolute inset-0 animate-ken-burns bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-roof.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero-roof.webp')" }}
         />
         <div className="absolute inset-0 gradient-overlay-hero" />
       </div>

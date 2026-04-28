@@ -6,49 +6,49 @@ import SectionHeader from "@/components/ui/SectionHeader";
 
 const projects = [
   {
-    image: "/images/exterior-duct.jpg",
+    image: "/images/exterior-duct.webp",
     title: "옥외 집진 시스템",
     location: "경기 화성",
     size: "large",
   },
   {
-    image: "/images/red-roof.jpg",
+    image: "/images/red-roof.webp",
     title: "지붕 벤치레이타 디테일",
     location: "경기 남부",
     size: "medium",
   },
   {
-    image: "/images/roof-blue.jpg",
+    image: "/images/roof-blue.webp",
     title: "벤치레이타 라인업 설치",
     location: "산업단지",
     size: "medium",
   },
   {
-    image: "/images/roof-mountain.jpg",
+    image: "/images/roof-mountain.webp",
     title: "옥상 환기 시스템",
     location: "경기 남부",
     size: "small",
   },
   {
-    image: "/images/duct-system.jpg",
+    image: "/images/duct-system.webp",
     title: "대형 스파이럴 닥트",
     location: "제조공장",
     size: "wide",
   },
   {
-    image: "/images/factory-interior.jpg",
+    image: "/images/factory-interior.webp",
     title: "실내 공조 라인",
     location: "경기",
     size: "small",
   },
   {
-    image: "/images/fan-catalog.jpg",
+    image: "/images/fan-catalog.webp",
     title: "취급 제품 · ROOF VENTILATOR / AIRFOIL FAN",
     location: "제품 카탈로그",
     size: "small",
   },
   {
-    image: "/images/ventilator-steel.jpg",
+    image: "/images/ventilator-steel.webp",
     title: "벤치레이타 제작",
     location: "자체 공장",
     size: "medium",

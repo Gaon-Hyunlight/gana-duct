@@ -16,7 +16,7 @@ export const SITE_URL = "https://ganaduct.co.kr";
  *        <meta name="naver-site-verification" content="여기 값" />
  */
 export const GOOGLE_VERIFICATION = "";
-export const NAVER_VERIFICATION = "";
+export const NAVER_VERIFICATION = "56dfc4211099745ea42343c767784ebfce175f9e";
 
 /**
  * 본사 위치 좌표 (Google Maps에서 정확한 값 추출 권장)

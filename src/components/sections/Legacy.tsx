@@ -22,7 +22,7 @@ export default function Legacy() {
           >
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-[var(--color-neutral-200)]">
               <img
-                src="/images/ventilator-steel.jpg"
+                src="/images/ventilator-steel.webp"
                 alt="가나공조닥트 공장 제작 현장 — 은색 벤치레이타 제작 완료"
                 className="w-full h-full object-cover"
                 loading="lazy"

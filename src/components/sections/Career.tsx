@@ -27,7 +27,7 @@ const careerItems: CareerItem[] = [
       "이맘대학교 닥트 시공",
       "리야드 한양아파트 (알 마터) 시공",
     ],
-    image: "/images/career-saudi.jpg",
+    image: "/images/career-saudi.webp",
     imageNote: "리야드 도시 전경 · 관련 분야 이미지",
     sources: [
       {
@@ -54,7 +54,7 @@ const careerItems: CareerItem[] = [
     countryEn: "INTERCONTINENTAL RIYADH",
     accent: "닥트 시공 (한양주택 근무 시기)",
     projects: ["호텔 실재 확인 가능, 한양주택 시공 기록은 추가 확인 필요"],
-    image: "/images/career-saudi.jpg",
+    image: "/images/career-saudi.webp",
     imageNote: "호텔 외관 — IHG 공식 자료",
     sources: [
       {
@@ -69,7 +69,7 @@ const careerItems: CareerItem[] = [
     countryEn: "UZBEKISTAN",
     accent: "대우자동차 안디잔 (아사카) 공장",
     projects: ["열교환기 보온 케이싱 시공"],
-    image: "/images/career-uzbek.jpg",
+    image: "/images/career-uzbek.webp",
     imageNote: "자동차 조립 라인 · 관련 분야 이미지",
     sources: [
       {
@@ -95,7 +95,7 @@ const careerItems: CareerItem[] = [
     countryEn: "VIETNAM",
     accent: "삼성전자 박닌 SEV 휴대폰 라인",
     projects: ["컨베이어·열교환기 보온 케이싱 시공"],
-    image: "/images/career-vietnam.jpg",
+    image: "/images/career-vietnam.webp",
     imageNote: "전자 제조 라인 · 관련 분야 이미지",
     sources: [
       {
@@ -117,7 +117,7 @@ const careerItems: CareerItem[] = [
     countryEn: "PHILIPPINES",
     accent: "한진중공업 수빅조선소",
     projects: ["건조로 보온 케이싱 시공"],
-    image: "/images/career-philippines.jpg",
+    image: "/images/career-philippines.webp",
     imageNote: "조선소 도크 · 관련 분야 이미지",
     sources: [
       {
@@ -143,7 +143,7 @@ const careerItems: CareerItem[] = [
     countryEn: "MEXICO",
     accent: "모토로라 공장",
     projects: ["급·배기 닥트 공사"],
-    image: "/images/career-mexico-card.jpg",
+    image: "/images/career-mexico-card.webp",
     imageNote: "산업 제조 라인 · 관련 분야 이미지",
     sources: [
       {
@@ -192,7 +192,7 @@ export default function Career() {
         aria-hidden="true"
         className="absolute inset-0 bg-cover bg-center pointer-events-none"
         style={{
-          backgroundImage: "url('/images/career-mexico.png')",
+          backgroundImage: "url('/images/career-mexico.webp')",
           opacity: 0.4,
         }}
       />

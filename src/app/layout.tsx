@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "가나공조닥트 화성본점 — 1997 자체공장",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE_BASE,
     description: DESCRIPTION,
-    images: ["/og-image.jpg"],
+    images: ["/og-image.webp"],
   },
   robots: {
     index: true,
