@@ -155,23 +155,22 @@ const careerItems: CareerItem[] = [
   },
 ];
 
-function SourceChips({ sources }: { sources: Source[] }) {
+function SourceChips({ sources, className = "" }: { sources: Source[]; className?: string }) {
   return (
-    <div className="mt-4 pt-4 border-t border-[var(--color-neutral-200)]">
+    <div className={`mt-4 pt-4 border-t border-[var(--color-neutral-200)] ${className}`}>
       <p className="text-[0.6875rem] font-semibold text-[var(--color-neutral-500)] tracking-wider uppercase mb-2">
         Sources
       </p>
       <ul className="space-y-1.5">
         {sources.map((s) => (
-          <li key={s.url}>
+          <li key={s.url} className="text-xs leading-snug">
             <a
               href={s.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-[var(--color-neutral-600)] hover:text-[var(--color-primary-700)] transition-colors leading-snug inline-flex items-start gap-1"
+              className="text-[var(--color-neutral-600)] hover:text-[var(--color-primary-700)] hover:underline underline-offset-2 transition-colors"
             >
-              <span className="mt-[1px]">↗</span>
-              <span className="underline-offset-2 hover:underline">{s.label}</span>
+              ↗ {s.label}
             </a>
           </li>
         ))}
@@ -252,17 +251,14 @@ export default function Career() {
                   {item.projects.map((p) => (
                     <li
                       key={p}
-                      className="flex gap-2.5 text-sm text-[var(--color-neutral-700)] leading-relaxed"
+                      className="text-sm text-[var(--color-neutral-700)] leading-relaxed pl-4 -indent-4 before:content-['▸'] before:text-[var(--color-primary-700)] before:mr-2"
                     >
-                      <span className="text-[var(--color-primary-700)] mt-0.5 shrink-0">▸</span>
-                      <span>{p}</span>
+                      {p}
                     </li>
                   ))}
                 </ul>
 
-                <div className="mt-auto">
-                  <SourceChips sources={item.sources} />
-                </div>
+                <SourceChips sources={item.sources} className="mt-auto" />
               </div>
             </m.article>
           ))}
