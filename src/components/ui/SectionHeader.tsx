@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
 interface SectionHeaderProps {
@@ -21,29 +21,29 @@ export default function SectionHeader({
   light = false,
 }: SectionHeaderProps) {
   return (
-    <motion.div
+    <m.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-80px" }}
       className={`mb-16 md:mb-20 ${align === "center" ? "text-center" : ""}`}
     >
-      <motion.p
+      <m.p
         variants={fadeUp}
         className="text-label mb-4"
         style={{ color: light ? "rgba(255,255,255,0.5)" : "var(--color-neutral-500)" }}
       >
         {number} / {label}
-      </motion.p>
-      <motion.h2
+      </m.p>
+      <m.h2
         variants={fadeUp}
         className="text-h2"
         style={{ color: light ? "#ffffff" : "var(--color-neutral-900)" }}
       >
         {title}
-      </motion.h2>
+      </m.h2>
       {subtitle && (
-        <motion.p
+        <m.p
           variants={fadeUp}
           className="mt-4 text-lead max-w-2xl"
           style={{
@@ -53,8 +53,8 @@ export default function SectionHeader({
           }}
         >
           {subtitle}
-        </motion.p>
+        </m.p>
       )}
-    </motion.div>
+    </m.div>
   );
 }

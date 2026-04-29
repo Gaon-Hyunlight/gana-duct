@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { LogoFull } from "@/components/ui/Logo";
 
 const navItems = [
@@ -108,7 +108,7 @@ export default function Navbar() {
       {/* Mobile fullscreen menu */}
       <AnimatePresence>
         {mobileOpen && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -117,7 +117,7 @@ export default function Navbar() {
           >
             <nav className="flex flex-col items-center gap-8">
               {navItems.map((item, i) => (
-                <motion.a
+                <m.a
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
@@ -127,10 +127,10 @@ export default function Navbar() {
                   className="text-2xl font-semibold text-white/90 hover:text-white transition-colors"
                 >
                   {item.label}
-                </motion.a>
+                </m.a>
               ))}
             </nav>
-            <motion.div
+            <m.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -148,8 +148,8 @@ export default function Navbar() {
               >
                 gana72407@naver.com
               </a>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         )}
       </AnimatePresence>
     </>

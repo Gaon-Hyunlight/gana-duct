@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import SectionHeader from "@/components/ui/SectionHeader";
 
@@ -209,7 +209,7 @@ export default function Career() {
           subtitle="이오복 대표가 한국 대기업의 해외 현장에서 쌓은 이력"
         />
 
-        <motion.div
+        <m.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -217,7 +217,7 @@ export default function Career() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
         >
           {careerItems.map((item, idx) => (
-            <motion.article
+            <m.article
               key={item.countryKo + idx}
               variants={fadeUp}
               className="relative flex flex-col border border-[var(--color-neutral-200)] rounded-sm bg-white/95 backdrop-blur-sm overflow-hidden hover:border-[var(--color-primary-700)] transition-all duration-400"
@@ -264,12 +264,12 @@ export default function Career() {
                   <SourceChips sources={item.sources} />
                 </div>
               </div>
-            </motion.article>
+            </m.article>
           ))}
-        </motion.div>
+        </m.div>
 
         {/* Footnote */}
-        <motion.p
+        <m.p
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
@@ -280,7 +280,7 @@ export default function Career() {
           언론 보도를 교차 확인하여 작성되었습니다. 현장별 참여 기간 및 세부 역할은 대표 진술 기준입니다.
           카드 내 사진은 모두 해당 분야 관련 참고 이미지(Pexels)이며 실제 시공 현장 사진이 아닙니다.
           섹션 배경 이미지는 대표 본인 소장의 멕시코 현장 실사진입니다.
-        </motion.p>
+        </m.p>
       </div>
     </section>
   );

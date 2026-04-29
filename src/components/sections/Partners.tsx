@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, slideInRight, staggerContainer } from "@/lib/animations";
 import SectionHeader from "@/components/ui/SectionHeader";
 
@@ -24,23 +24,23 @@ export default function Partners() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
           {/* LEFT: Text */}
-          <motion.div
+          <m.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-80px" }}
             className="space-y-6"
           >
-            <motion.p variants={fadeUp} className="text-[var(--color-neutral-700)] text-[1.0625rem] leading-[1.85]">
+            <m.p variants={fadeUp} className="text-[var(--color-neutral-700)] text-[1.0625rem] leading-[1.85]">
               경기 화성 본사를 거점으로, 수도권 전역 및 충청권까지 시공합니다.
               대형 제조공장, 식품공장, 물류센터, 요식업 사업장 등 폭넓은 현장에 대응합니다.
-            </motion.p>
+            </m.p>
 
-            <motion.p variants={fadeUp} className="text-[var(--color-neutral-700)] text-[1.0625rem] leading-[1.85]">
+            <m.p variants={fadeUp} className="text-[var(--color-neutral-700)] text-[1.0625rem] leading-[1.85]">
               전화 한 통이면 49년 경력의 전문가가 직접 현장을 봅니다.
-            </motion.p>
+            </m.p>
 
-            <motion.div variants={fadeUp} className="pt-4">
+            <m.div variants={fadeUp} className="pt-4">
               <p className="text-sm font-semibold text-[var(--color-neutral-900)] mb-3">주요 시공 권역</p>
               <div className="flex flex-wrap gap-2">
                 {coverageAreas.map((area) => (
@@ -52,20 +52,20 @@ export default function Partners() {
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </m.div>
 
-            <motion.div variants={fadeUp} className="pt-2">
+            <m.div variants={fadeUp} className="pt-2">
               <a
                 href="#contact"
                 className="inline-flex items-center gap-2 text-[var(--color-primary-700)] font-semibold text-sm hover:gap-3 transition-all duration-300"
               >
                 견적 문의하기 <span>&rarr;</span>
               </a>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
 
           {/* RIGHT: Real Google Map */}
-          <motion.div
+          <m.div
             variants={slideInRight}
             initial="hidden"
             whileInView="visible"
@@ -102,7 +102,7 @@ export default function Partners() {
                 네이버지도에서 길찾기 <span>&rarr;</span>
               </a>
             </div>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import SectionHeader from "@/components/ui/SectionHeader";
 
@@ -76,7 +76,7 @@ export default function Services() {
           subtitle="냉난방부터 산업 특수설비까지, 전 영역을 책임집니다."
         />
 
-        <motion.div
+        <m.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -84,7 +84,7 @@ export default function Services() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
         >
           {services.map((s) => (
-            <motion.div
+            <m.div
               key={s.num}
               variants={fadeUp}
               className="group relative border border-[var(--color-neutral-200)] rounded-sm overflow-hidden bg-white hover:border-[var(--color-primary-700)] transition-all duration-400 hover:-translate-y-1 hover:shadow-lg cursor-default"
@@ -111,9 +111,9 @@ export default function Services() {
                   {s.desc}
                 </p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

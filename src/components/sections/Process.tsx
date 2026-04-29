@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import SectionHeader from "@/components/ui/SectionHeader";
 
@@ -28,7 +28,7 @@ export default function Process() {
           subtitle="현장조사부터 A/S까지, 전 과정을 직접 책임지는 원스톱 시공"
         />
 
-        <motion.div
+        <m.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -36,7 +36,7 @@ export default function Process() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10"
         >
           {steps.map((step, i) => (
-            <motion.div key={step.num} variants={fadeUp} className="relative flex gap-5">
+            <m.div key={step.num} variants={fadeUp} className="relative flex gap-5">
               {/* Number circle */}
               <div className="shrink-0 w-12 h-12 rounded-full bg-[var(--color-primary-700)] flex items-center justify-center">
                 <span className="text-white text-sm font-bold font-mono">{step.num}</span>
@@ -56,9 +56,9 @@ export default function Process() {
                   {step.desc}
                 </p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

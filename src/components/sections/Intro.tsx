@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 import CountUp from "@/components/ui/CountUp";
 
@@ -14,7 +14,7 @@ export default function Intro() {
   return (
     <section id="intro" className="bg-white" style={{ paddingTop: "var(--section-gap)", paddingBottom: "var(--section-gap)" }}>
       <div className="container-main">
-        <motion.div
+        <m.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -22,12 +22,12 @@ export default function Intro() {
           className="max-w-4xl mx-auto text-center"
         >
           {/* Label */}
-          <motion.p variants={fadeUp} className="text-label text-[var(--color-neutral-500)] mb-6">
+          <m.p variants={fadeUp} className="text-label text-[var(--color-neutral-500)] mb-6">
             소개 / INTRODUCTION
-          </motion.p>
+          </m.p>
 
           {/* Lead copy */}
-          <motion.h2
+          <m.h2
             variants={fadeUp}
             className="text-h2 text-[var(--color-neutral-900)] leading-[1.5]"
           >
@@ -35,11 +35,11 @@ export default function Intro() {
             <span className="block text-[var(--color-neutral-500)] mt-2">
               이오복 대표는 49년간 그 한 줄기를 손으로 만들어 왔습니다.
             </span>
-          </motion.h2>
-        </motion.div>
+          </m.h2>
+        </m.div>
 
         {/* Stats grid */}
-        <motion.div
+        <m.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -47,7 +47,7 @@ export default function Intro() {
           className="mt-16 md:mt-24 grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto"
         >
           {stats.map((stat) => (
-            <motion.div
+            <m.div
               key={stat.label}
               variants={fadeUp}
               className="text-center"
@@ -59,9 +59,9 @@ export default function Intro() {
                 {stat.label}
               </p>
               <p className="text-xs text-[var(--color-neutral-500)]">{stat.sub}</p>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

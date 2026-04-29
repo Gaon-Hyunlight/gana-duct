@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/lib/animations";
 
 export default function Contact() {
@@ -11,7 +11,7 @@ export default function Contact() {
       style={{ paddingTop: "var(--section-gap)", paddingBottom: "var(--section-gap)" }}
     >
       <div className="container-main">
-        <motion.div
+        <m.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -19,17 +19,17 @@ export default function Contact() {
           className="max-w-5xl mx-auto text-center"
         >
           {/* Section label */}
-          <motion.p variants={fadeUp} className="text-label text-[var(--color-neutral-500)] mb-4">
+          <m.p variants={fadeUp} className="text-label text-[var(--color-neutral-500)] mb-4">
             문의 / CONTACT
-          </motion.p>
+          </m.p>
 
           {/* Title */}
-          <motion.h2 variants={fadeUp} className="text-h2 text-[var(--color-neutral-900)] mb-6">
+          <m.h2 variants={fadeUp} className="text-h2 text-[var(--color-neutral-900)] mb-6">
             49년의 손끝을 의뢰하세요
-          </motion.h2>
+          </m.h2>
 
           {/* Differentiator badges */}
-          <motion.div variants={fadeUp} className="mb-12 md:mb-16 flex flex-wrap justify-center gap-2">
+          <m.div variants={fadeUp} className="mb-12 md:mb-16 flex flex-wrap justify-center gap-2">
             {["무료 견적", "시공 보증 1년", "A/S 무상"].map((label) => (
               <span
                 key={label}
@@ -50,10 +50,10 @@ export default function Contact() {
                 {label}
               </span>
             ))}
-          </motion.div>
+          </m.div>
 
           {/* Direct contact CTA cards */}
-          <motion.div
+          <m.div
             variants={fadeUp}
             className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 text-left"
           >
@@ -166,10 +166,10 @@ export default function Contact() {
                 메일 보내기 &rarr;
               </p>
             </a>
-          </motion.div>
+          </m.div>
 
           {/* Secondary info — address + hours + fax */}
-          <motion.div
+          <m.div
             variants={fadeUp}
             className="mt-10 md:mt-12 pt-8 border-t border-[var(--color-neutral-200)] grid grid-cols-1 sm:grid-cols-3 gap-6 text-left"
           >
@@ -200,8 +200,8 @@ export default function Contact() {
               </p>
               <p className="text-sm text-[var(--color-neutral-700)]">031-353-2548</p>
             </div>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
     </section>
   );

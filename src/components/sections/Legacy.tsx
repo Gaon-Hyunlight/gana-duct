@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, slideInLeft, slideInRight, staggerContainer } from "@/lib/animations";
 
 export default function Legacy() {
@@ -13,7 +13,7 @@ export default function Legacy() {
       <div className="container-main">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* LEFT: Image */}
-          <motion.div
+          <m.div
             variants={slideInLeft}
             initial="hidden"
             whileInView="visible"
@@ -34,26 +34,26 @@ export default function Legacy() {
                 </p>
               </div>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* RIGHT: Text */}
-          <motion.div
+          <m.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
           >
-            <motion.p variants={fadeUp} className="text-label text-[var(--color-neutral-500)] mb-4">
+            <m.p variants={fadeUp} className="text-label text-[var(--color-neutral-500)] mb-4">
               장인정신 / LEGACY
-            </motion.p>
+            </m.p>
 
-            <motion.h2 variants={fadeUp} className="text-h2 text-[var(--color-neutral-900)] mb-10">
+            <m.h2 variants={fadeUp} className="text-h2 text-[var(--color-neutral-900)] mb-10">
               장인(匠人)이라
               <br />
               불리는 이유
-            </motion.h2>
+            </m.h2>
 
-            <motion.div variants={fadeUp} className="space-y-6 text-[var(--color-neutral-700)] text-[1.0625rem] leading-[1.85]">
+            <m.div variants={fadeUp} className="space-y-6 text-[var(--color-neutral-700)] text-[1.0625rem] leading-[1.85]">
               <p>
                 1970년대 후반, 공조닥트라는 단어조차 생소하던 시절.
                 이오복 대표는 열 여덟의 나이로 철판을 잡았습니다.
@@ -71,10 +71,10 @@ export default function Legacy() {
                 수만 번의 절단과 용접, 수천 번의 시공을
                 같은 마음으로 반복한 사람만이 얻을 수 있는 이름입니다.
               </p>
-            </motion.div>
+            </m.div>
 
             {/* Quote card */}
-            <motion.blockquote
+            <m.blockquote
               variants={slideInRight}
               className="mt-12 pl-6 border-l-[3px] border-[var(--color-signal)]"
             >
@@ -86,8 +86,8 @@ export default function Legacy() {
               <cite className="block mt-3 not-italic text-sm text-[var(--color-neutral-500)] font-normal">
                 &mdash; 이오복 대표
               </cite>
-            </motion.blockquote>
-          </motion.div>
+            </m.blockquote>
+          </m.div>
         </div>
       </div>
     </section>

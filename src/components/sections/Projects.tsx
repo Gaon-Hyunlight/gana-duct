@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { fadeUp, staggerContainer, scaleIn } from "@/lib/animations";
 import SectionHeader from "@/components/ui/SectionHeader";
 
@@ -77,7 +77,7 @@ export default function Projects() {
           subtitle="화성·수원·평택 일대 제조공장 및 산업단지 시공 현장"
         />
 
-        <motion.div
+        <m.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
@@ -85,7 +85,7 @@ export default function Projects() {
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"
         >
           {projects.map((project, i) => (
-            <motion.div
+            <m.div
               key={i}
               variants={scaleIn}
               className={`group relative overflow-hidden rounded-sm bg-[var(--color-neutral-200)] cursor-pointer ${getGridClass(project.size, i)}`}
@@ -108,9 +108,9 @@ export default function Projects() {
                   </p>
                 </div>
               </div>
-            </motion.div>
+            </m.div>
           ))}
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );
