@@ -70,9 +70,15 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:gana72407@naver.com" className="hover:text-white transition-colors">
-                  gana72407@naver.com
-                </a>
+                {/* Cloudflare Email Obfuscation 우회 — email-decode.min.js 주입 차단 */}
+                <a
+                  href="mailto:gana72407@naver.com"
+                  className="hover:text-white transition-colors"
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      "<!--email_off-->gana72407@naver.com<!--/email_off-->",
+                  }}
+                />
               </li>
               <li>Fax. 031-353-2548</li>
             </ul>

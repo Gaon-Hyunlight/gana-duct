@@ -159,9 +159,14 @@ export default function Contact() {
               <p className="text-xs text-[var(--color-neutral-500)] group-hover:text-white/60 mb-1 transition-colors duration-300">
                 견적·문의 메일
               </p>
-              <p className="text-base md:text-lg font-bold text-[var(--color-neutral-900)] group-hover:text-white tracking-tight break-all transition-colors duration-300">
-                gana72407@naver.com
-              </p>
+              {/* Cloudflare Email Obfuscation 우회 */}
+              <p
+                className="text-base md:text-lg font-bold text-[var(--color-neutral-900)] group-hover:text-white tracking-tight break-all transition-colors duration-300"
+                dangerouslySetInnerHTML={{
+                  __html:
+                    "<!--email_off-->gana72407@naver.com<!--/email_off-->",
+                }}
+              />
               <p className="mt-3 text-xs text-[var(--color-primary-700)] group-hover:text-white/80 font-semibold transition-colors duration-300">
                 메일 보내기 &rarr;
               </p>

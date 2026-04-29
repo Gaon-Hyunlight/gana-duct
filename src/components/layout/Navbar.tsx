@@ -142,12 +142,15 @@ export default function Navbar() {
               >
                 031-353-2547
               </a>
+              {/* Cloudflare Email Obfuscation 우회 */}
               <a
                 href="mailto:gana72407@naver.com"
                 className="text-white/60 hover:text-white text-sm transition-colors"
-              >
-                gana72407@naver.com
-              </a>
+                dangerouslySetInnerHTML={{
+                  __html:
+                    "<!--email_off-->gana72407@naver.com<!--/email_off-->",
+                }}
+              />
             </m.div>
           </m.div>
         )}
