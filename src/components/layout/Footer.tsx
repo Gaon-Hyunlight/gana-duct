@@ -102,6 +102,11 @@ export default function Footer() {
             화성에서 1997년부터, 가나공조닥트.
           </p>
         </div>
+
+        {/* 정보 책임 한계 (제작자 면책) */}
+        <p className="mt-6 text-[0.625rem] text-[var(--color-neutral-700)] leading-relaxed text-center md:text-left">
+          본 사이트의 모든 정보는 가나공조닥트(대표 이오복)가 제공한 자료를 기반으로 작성되었습니다.
+        </p>
       </div>
     </footer>
   );
