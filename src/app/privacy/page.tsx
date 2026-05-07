@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description:
     "가나공조닥트(GANA HVAC DUCT) 개인정보처리방침. 개인정보 수집·이용·보유·파기에 관한 사항.",
   robots: { index: true, follow: true },
+  alternates: { canonical: "/privacy" },
 };
 
 const sections = [
